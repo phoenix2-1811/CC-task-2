@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 
 # import re
 
-from fastapi import FastAPI
+# from fastapi import FastAPI
 
 from webdriver_manager.chrome import ChromeDriverManager
 
