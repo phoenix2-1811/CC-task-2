@@ -20,8 +20,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 import json
 
-graphic_card_name=[]
-graphic_card_price=[]
+# graphic_card_name=[]
+# graphic_card_price=[]
 
 website='https://www.nvidia.com/en-in/geforce/buy/'
 driver=webdriver.Chrome(service=Service(ChromeDriverManager().install())) # Optional argument, if not specified will search path.
@@ -53,12 +53,12 @@ for graphic_card in graphic_cards:
 
 # print(gc_dict)
 # print(graphic_card_price)
-json_object = json.dumps(gc_dict, indent = 4)
+# json_object = json.dumps(gc_dict, indent = 4)
 # print(json_object)
 
-app=FastAPI()
-@app.get("/")
-async def hello():
-    return json_object
+# app=FastAPI()
+# @app.get("/")
+# async def hello():
+#     return json_object
 
 driver.quit()
